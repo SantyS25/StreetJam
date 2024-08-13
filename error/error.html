@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreetJam</title>
+    <link rel="stylesheet" href="error.css">
     <link rel="stylesheet" href="/style.css">
-    <link rel="stylesheet" href="contacto.css">
 
     <link rel="icon" href="/img/logo-claro.png">
 
@@ -15,7 +15,7 @@
         rel="stylesheet">
 
     <!-- ICONS: Font Awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.6.0/css/all.css">
 
     <!-- ICONS: Line Awesome -->
     <link rel="stylesheet"
@@ -46,8 +46,8 @@
                 <nav class="hm-menu">
                     <ul>
                         <li><a href="/index.html">INICIO</a></li>
-                        <li><a href="/productos/productos.html">CATALOGO</a></li>
-                        <li><a href="/contacto/contacto.html">CONTACTO</a></li>
+                        <li><a href="">CATALOGO</a></li>
+                        <li><a href="">CONTACTO</a></li>
                     </ul>
 
                     <!-- ICONO DEL CARRITO -->
@@ -71,8 +71,8 @@
     </div>
 
     <!-- =================================
-              MENU MOVIL
-            ================================== -->
+          MENU MOVIL
+        ================================== -->
     <div class="header-menu-movil">
         <button class="cerrar-menu"><i class="fas fa-times"></i></button>
         <ul>
@@ -82,23 +82,29 @@
         </ul>
     </div>
 
-    <div class="form-c">
-        <div class="form-container">
-            <form class="form">
-                <div class="form-group">
-                    <label for="email">Company Email</label>
-                    <input type="text" id="email" name="email" required="">
-                </div>
-                <div class="form-group">
-                    <label for="textarea">How Can We Help You?</label>
-                    <textarea name="textarea" id="textarea" rows="10" cols="50" required="">          </textarea>
-                </div>
-                <button class="form-submit-btn" type="submit">Submit</button>
-            </form>
+    <!-- Cargando -->
+    <div class="contenedor-general-error">
+        <div class="loader">
+            <label>Pagina en Proceso, Favor regresar.</label>
+            <div class="loading"></div>
         </div>
     </div>
 
+
+    <!-- Animaciones : AOS-->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <!-- Mi Script -->
     <script src="/main.js"></script>
+
+    <script>
+
+        AOS.init({
+            duration: 1200,
+        })
+
+
+    </script>
 </body>
 
 </html>
